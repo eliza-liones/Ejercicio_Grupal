@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_Grupal.EjercicioTres"
+             Title="EjercicioTres"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="Beige">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <Label Text="📚 Tablas de Multiplicar"
+                   FontSize="28"
+                   HorizontalOptions="Center"
+                   TextColor="#333" />
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button Text="Tabla 1" Clicked="OnTablaClicked" CommandParameter="1" BackgroundColor="#FFB347" TextColor="White" WidthRequest="120" HeightRequest="60" CornerRadius="15"/>
+                <Button Text="Tabla 2" Clicked="OnTablaClicked" CommandParameter="2" BackgroundColor="#77DD77" TextColor="White" WidthRequest="120" HeightRequest="60" CornerRadius="15"/>
+                <Button Text="Tabla 3" Clicked="OnTablaClicked" CommandParameter="3" BackgroundColor="#779ECB" TextColor="White" WidthRequest="120" HeightRequest="60" CornerRadius="15"/>
+                <Button Text="Tabla 4" Clicked="OnTablaClicked" CommandParameter="4" BackgroundColor="#FF6961" TextColor="White" WidthRequest="120" HeightRequest="60" CornerRadius="15"/>
+                <Button Text="Tabla 5" Clicked="OnTablaClicked" CommandParameter="5" BackgroundColor="#CFCFC4" TextColor="Black" WidthRequest="120" HeightRequest="60" CornerRadius="15"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button Text="Tabla 6" Clicked="OnTablaClicked" CommandParameter="6" BackgroundColor="#F49AC2" TextColor="White"  WidthRequest="120" HeightRequest="60" CornerRadius="15"/>
+                <Button Text="Tabla 7" Clicked="OnTablaClicked" CommandParameter="7" BackgroundColor="#AEC6CF" TextColor="Black"  WidthRequest="120" HeightRequest="60" CornerRadius="15"/>
+                <Button Text="Tabla 8" Clicked="OnTablaClicked" CommandParameter="8" BackgroundColor="#FFD1DC" TextColor="Black"  WidthRequest="120" HeightRequest="60" CornerRadius="15"/>
+                <Button Text="Tabla 9" Clicked="OnTablaClicked" CommandParameter="9" BackgroundColor="#B39EB5" TextColor="White"  WidthRequest="120" HeightRequest="60" CornerRadius="15"/>
+                <Button Text="Tabla 10" Clicked="OnTablaClicked" CommandParameter="10" BackgroundColor="#FFCC99" TextColor="Black"  WidthRequest="120" HeightRequest="60" CornerRadius="15"/>
+            </HorizontalStackLayout>
+
+            <Label x:Name="TituloTabla"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   TextColor="#000"
+                   HorizontalOptions="Center" 
+                   Margin="0,20,0,0"/>
+
+            <Frame 
+                BackgroundColor="#B6CFB6"
+                BorderColor="DarkGreen"
+                CornerRadius="15"
+                HasShadow="True"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                WidthRequest="250">
+
+                <VerticalStackLayout x:Name="ListaResultados"
+                         Spacing="5"
+                         HorizontalOptions="Center" />
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

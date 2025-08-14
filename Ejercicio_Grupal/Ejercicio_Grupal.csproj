@@ -68,6 +68,9 @@
 	  <MauiXaml Update="EjercicioDos.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="EjercicioTres.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="EjercicioUno.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
