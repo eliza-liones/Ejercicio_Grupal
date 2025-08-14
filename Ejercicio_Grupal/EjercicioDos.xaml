@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_Grupal.EjercicioDos"
+             Title="EjercicioDos"
+             BackgroundColor="Black"
+             NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="False">
+
+        <VerticalStackLayout Spacing="40"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center">
+
+            <!-- Texto de la cuenta regresiva -->
+            <Label x:Name="lblCuenta"
+               Text="10"
+               FontSize="120"
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+            <!-- Botón iniciar -->
+            <Button x:Name="btnIniciar"
+                Text="Iniciar"
+                Clicked="Iniciar_Clicked"
+                BackgroundColor="#B388FF"
+                TextColor="Black"
+                FontSize="24"
+                Padding="20,10"
+                CornerRadius="10"/>
+
+        </VerticalStackLayout>
+    </ContentPage>
