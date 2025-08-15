@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_Grupal.PaginaCuatro"
+             Title="PaginaCuatro" BackgroundColor="#F3E5F5">
+    <!-- Fondo lavanda claro -->
+
+    <VerticalStackLayout Padding="30" Spacing="25">
+
+        <Label Text="Calculadora de Sueldo Semanal"
+               FontSize="24"
+               HorizontalOptions="Center"
+               TextColor="#6A1B9A" />
+        <!-- Morado intenso -->
+
+        <Frame BackgroundColor="#E1BEE7" CornerRadius="15" Padding="20">
+            <VerticalStackLayout Spacing="15">
+
+                <Label Text="Horas trabajadas:" FontSize="18" TextColor="#4A148C"/>
+                <Entry x:Name="HorasEntry"
+                       Keyboard="Numeric"
+                       Placeholder="Ej. 40"
+                       BackgroundColor="White"
+                       TextColor="#4A148C"
+                       HeightRequest="40"
+                       Margin="0,0,0,10"/>
+
+                <Label Text="Pago por hora ($):" FontSize="18" TextColor="#4A148C"/>
+                <Entry x:Name="PagoEntry"
+                       Keyboard="Numeric"
+                       Placeholder="Ej. 5.25"
+                       BackgroundColor="White"
+                       TextColor="#4A148C"
+                       HeightRequest="40"
+                       Margin="0,0,0,10"/>
+
+                <Button Text="Calcular sueldo"
+                        Clicked="OnCalcularClicked"
+                        BackgroundColor="#8E24AA"
+                        TextColor="White"
+                        CornerRadius="10"
+                        HeightRequest="45"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Label x:Name="ResultadoLabel"
+               FontSize="20"
+               TextColor="#6A1B9A"
+               HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+
+</ContentPage>
