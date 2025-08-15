@@ -65,6 +65,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="EjercicioCinco.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="EjercicioDos.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

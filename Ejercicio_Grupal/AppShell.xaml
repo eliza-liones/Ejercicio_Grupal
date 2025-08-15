@@ -23,5 +23,10 @@
          Title="Ejer.3"
          ContentTemplate="{DataTemplate local:EjercicioTres}"
          Icon="dotnet_bot.png" />
+
+        <ShellContent
+         Title="Ejer.5"
+         ContentTemplate="{DataTemplate local:EjercicioCinco}"
+         Icon="dotnet_bot.png" />
     </TabBar>
 </Shell>
