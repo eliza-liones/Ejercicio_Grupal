@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_Grupal.EjercicioSeis"
+             Title="EjercicioSeis">
+    <Grid>
+        <Image Source="billete.jpg"
+       Aspect="AspectFill"
+       Opacity="0.8"
+       ZIndex="0"/>
+
+        <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Center">
+
+            <Frame BackgroundColor="#80FFFFFF" Padding="10" CornerRadius="15" HasShadow="False">
+                <Label
+        
+        FontFamily="Blackadder ITC"
+       TextColor="Black" Text="Convertidor de Pesos Mexicanos a Dólares 🗽"
+        FontSize="24"
+        HorizontalOptions="Center" />
+            </Frame>
+            <Entry
+        x:Name="pesosEntry"
+        TextColor="Black"
+        Placeholder="Introduce los pesos mexicanos"
+        Keyboard="Numeric" />
+
+            <Button
+        FontFamily="Arial"
+        Text="Convertir"
+        BackgroundColor="#89e186"
+        Clicked="Button_Clicked"
+        
+        />
+
+            <Label
+          FontFamily="Arial "
+        TextColor="Black"
+        x:Name="resultadoLabel"
+        
+        Text="0.00 USD"
+        FontSize="20"
+        HorizontalOptions="Center" />
+
+
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>
